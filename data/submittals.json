@@ -1,0 +1,19 @@
+{
+  "submittals": [
+    {
+      "id": "sub-ups-01",
+      "label": "UPS-01 vendor submittal (contains a deviation)",
+      "text": "Vendor Submittal - Equipment Tag UPS-01. Uninterruptible Power Supply System. Manufacturer model PowerGuard PG500. Continuous output rating: 500 kVA at 0.9 power factor. Configuration: N+1 redundant at system level. Input voltage: 415 V three phase, 50 Hz. Output voltage: 415 V three phase, regulation plus or minus 1 percent. Online double-conversion efficiency: 94 percent at 50 percent load. Battery autonomy: 10 minutes at full rated load. Certified test report attached."
+    },
+    {
+      "id": "sub-cool-02",
+      "label": "CH-02 precision cooling submittal (compliant)",
+      "text": "Vendor Submittal - Equipment Tag CH-02. Precision Cooling Unit. Manufacturer model CoolFlow CF-40. Supply air temperature control range: 18 to 27 degrees Celsius. Configuration: N+1 redundant. Cooling capacity 120 kW sensible. Compliant with ASHRAE recommended envelope."
+    },
+    {
+      "id": "sub-ups-03",
+      "label": "UPS-03 submittal (multiple deviations)",
+      "text": "Vendor Submittal - Equipment Tag UPS-03. Uninterruptible Power Supply System. Continuous output rating: 400 kVA at 0.9 power factor. Configuration: standalone, no redundancy. Input voltage: 415 V three phase. Efficiency: 92 percent at 50 percent load. Battery autonomy: 7 minutes at full load."
+    }
+  ]
+}

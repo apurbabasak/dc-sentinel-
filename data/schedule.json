@@ -1,0 +1,12 @@
+{
+  "activities": [
+    { "id": "A-101", "name": "UPS system installation", "onCriticalPath": true, "procurementStatus": "not_ordered", "leadTimeDays": 70, "daysToNeed": 55, "floatDays": 2, "workforceAvailabilityPct": 85 },
+    { "id": "A-102", "name": "Chiller plant erection", "onCriticalPath": true, "procurementStatus": "ordered", "leadTimeDays": 90, "daysToNeed": 120, "floatDays": 5, "workforceAvailabilityPct": 70 },
+    { "id": "A-103", "name": "Switchgear installation", "onCriticalPath": true, "procurementStatus": "in_transit", "leadTimeDays": 45, "daysToNeed": 60, "floatDays": 8, "workforceAvailabilityPct": 90 },
+    { "id": "A-104", "name": "Raised access floor", "onCriticalPath": false, "procurementStatus": "delivered", "leadTimeDays": 20, "daysToNeed": 100, "floatDays": 25, "workforceAvailabilityPct": 95 },
+    { "id": "A-105", "name": "Generator commissioning", "onCriticalPath": true, "procurementStatus": "ordered", "leadTimeDays": 110, "daysToNeed": 100, "floatDays": 3, "workforceAvailabilityPct": 60 },
+    { "id": "A-106", "name": "Fire suppression piping", "onCriticalPath": false, "procurementStatus": "in_transit", "leadTimeDays": 30, "daysToNeed": 70, "floatDays": 12, "workforceAvailabilityPct": 80 },
+    { "id": "A-107", "name": "Structured cabling", "onCriticalPath": false, "procurementStatus": "not_ordered", "leadTimeDays": 25, "daysToNeed": 80, "floatDays": 18, "workforceAvailabilityPct": 75 },
+    { "id": "A-108", "name": "BMS integration", "onCriticalPath": true, "procurementStatus": "ordered", "leadTimeDays": 50, "daysToNeed": 55, "floatDays": 4, "workforceAvailabilityPct": 65 }
+  ]
+}

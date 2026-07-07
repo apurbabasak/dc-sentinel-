@@ -1,0 +1,89 @@
+{
+  "namespace": "demo-project",
+  "documents": [
+    {
+      "id": "spec-ups-capacity",
+      "docType": "spec",
+      "source": "Electrical Spec E-201",
+      "clause": "3.2.1",
+      "text": "Each UPS module shall have a minimum continuous output rating of 500 kVA at 0.9 power factor. Modules shall be configured N+1 redundant at the system level."
+    },
+    {
+      "id": "spec-ups-efficiency",
+      "docType": "spec",
+      "source": "Electrical Spec E-201",
+      "clause": "3.2.4",
+      "text": "UPS units shall achieve a minimum online double-conversion efficiency of 96 percent at 50 percent load and 96.5 percent at 75 percent load, measured per the manufacturer certified test report."
+    },
+    {
+      "id": "spec-ups-voltage",
+      "docType": "spec",
+      "source": "Electrical Spec E-201",
+      "clause": "3.2.2",
+      "text": "UPS input voltage shall be 415 V three phase, 50 Hz. Output voltage shall be 415 V three phase with a voltage regulation of plus or minus 1 percent under steady state."
+    },
+    {
+      "id": "spec-ups-autonomy",
+      "docType": "spec",
+      "source": "Electrical Spec E-201",
+      "clause": "3.2.6",
+      "text": "Battery autonomy shall be a minimum of 10 minutes at full rated load, sized for end of life and the minimum design temperature."
+    },
+    {
+      "id": "spec-cooling-temp",
+      "docType": "spec",
+      "source": "Mechanical Spec M-310",
+      "clause": "4.1.3",
+      "text": "Precision cooling units shall maintain cold aisle supply air temperature between 18 and 27 degrees Celsius in accordance with ASHRAE recommended envelope for data centres."
+    },
+    {
+      "id": "spec-cooling-redundancy",
+      "docType": "spec",
+      "source": "Mechanical Spec M-310",
+      "clause": "4.1.5",
+      "text": "The cooling system shall be N+1 redundant. Failure of any single unit shall not cause the cold aisle temperature to exceed 27 degrees Celsius."
+    },
+    {
+      "id": "spec-fire-suppression",
+      "docType": "spec",
+      "source": "Fire Spec F-120",
+      "clause": "5.3.1",
+      "text": "Electrical rooms and UPS rooms shall be protected by a clean agent gaseous fire suppression system with a minimum design concentration appropriate to the hazard, plus VESDA very early smoke detection."
+    },
+    {
+      "id": "spec-earthing",
+      "docType": "spec",
+      "source": "Electrical Spec E-201",
+      "clause": "3.7.2",
+      "text": "The earthing system shall achieve a maximum earth resistance of 1 ohm. A signal reference grid shall be provided under the raised floor in all IT halls."
+    },
+    {
+      "id": "spec-tier",
+      "docType": "spec",
+      "source": "Design Basis DB-001",
+      "clause": "2.1",
+      "text": "The facility shall be designed and commissioned to Uptime Institute Tier III concurrent maintainability, providing an expected availability of 99.982 percent."
+    },
+    {
+      "id": "rfi-chilled-water",
+      "docType": "rfi",
+      "source": "RFI-045 (resolved)",
+      "clause": "",
+      "text": "RFI-045: Contractor asked whether the chilled water supply setpoint should be 7 degrees Celsius or 10 degrees Celsius. Resolution: design team confirmed 7 degrees Celsius supply, 13 degrees Celsius return, per Mechanical Spec M-310 clause 4.2. Closed."
+    },
+    {
+      "id": "rfi-cable-tray",
+      "docType": "rfi",
+      "source": "RFI-032 (resolved)",
+      "clause": "",
+      "text": "RFI-032: Contractor asked for clarification on cable tray fill ratio for power cabling. Resolution: maximum 40 percent fill for power, 50 percent for data, per Electrical Spec E-201 clause 3.9. Closed."
+    },
+    {
+      "id": "rfi-generator",
+      "docType": "rfi",
+      "source": "RFI-050 (resolved)",
+      "clause": "",
+      "text": "RFI-050: Contractor asked whether standby generators must carry the full cooling load. Resolution: generators shall carry full IT plus full cooling plus house load at N+1, per Design Basis DB-001. Closed."
+    }
+  ]
+}

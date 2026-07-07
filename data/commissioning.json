@@ -1,0 +1,12 @@
+{
+  "tests": [
+    { "id": "C-01", "system": "UPS", "name": "Battery autonomy at full load", "standard": "TIA-942 / Uptime Tier III", "criterion": { "type": "min", "value": 10, "unit": "min" } },
+    { "id": "C-02", "system": "UPS", "name": "Online efficiency at 50% load", "standard": "Electrical Spec E-201 3.2.4", "criterion": { "type": "min", "value": 96, "unit": "%" } },
+    { "id": "C-03", "system": "UPS", "name": "Output voltage regulation", "standard": "Electrical Spec E-201 3.2.2", "criterion": { "type": "max", "value": 1, "unit": "% deviation" } },
+    { "id": "C-04", "system": "Cooling", "name": "Cold aisle supply air temperature", "standard": "Mechanical Spec M-310 4.1.3", "criterion": { "type": "range", "min": 18, "max": 27, "unit": "C" } },
+    { "id": "C-05", "system": "Cooling", "name": "N+1 failover hold temperature", "standard": "Mechanical Spec M-310 4.1.5", "criterion": { "type": "max", "value": 27, "unit": "C" } },
+    { "id": "C-06", "system": "Earthing", "name": "Earth resistance", "standard": "Electrical Spec E-201 3.7.2", "criterion": { "type": "max", "value": 1, "unit": "ohm" } },
+    { "id": "C-07", "system": "Fire", "name": "VESDA smoke detection functional", "standard": "Fire Spec F-120 5.3.1", "criterion": { "type": "boolean", "value": true } },
+    { "id": "C-08", "system": "Generator", "name": "Full load acceptance (IT + cooling + house)", "standard": "Design Basis DB-001", "criterion": { "type": "boolean", "value": true } }
+  ]
+}
