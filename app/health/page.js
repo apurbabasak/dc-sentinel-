@@ -70,27 +70,27 @@ export default function HealthPage() {
           <div style={{ marginBottom: 10 }}>
             Overall: <span className={"pill " + (health.ok ? "green" : "red")}>{health.ok ? "All systems go" : "Needs attention"}</span>
           </div>
-          <table>
+          <div className="tablewrap"><table>
             <thead><tr><th>Service</th><th>Status</th><th>Detail</th></tr></thead>
             <tbody>
               <Check name="Gemini API keys" data={g} detail={g ? (g.ok ? (g.count + " key(s), model " + g.model) : (g.error || "no keys")) : ""} />
               <Check name="Gemini embeddings" data={ge} detail={ge ? (ge.ok ? ("dimension " + ge.dimension) : (ge.error || "")) : ""} />
               <Check name="Pinecone index" data={pc} detail={pc ? (pc.ok ? ("index '" + pc.index + "', " + pc.matchesSeen + " match(es) seen") : (pc.error || "")) : ""} />
             </tbody>
-          </table>
+          </table></div>
         </div>
       ) : null}
 
       <div className="card">
         <b style={{ color: "#0B1F3A" }}>Environment variables you need (set these in Vercel):</b>
-        <table style={{ marginTop: 10 }}>
+        <div className="tablewrap"><table style={{ marginTop: 10 }}>
           <thead><tr><th>Variable</th><th>What it is</th></tr></thead>
           <tbody>
             <tr><td><code>GEMINI_API_KEY_1</code> ... <code>_8</code></td><td className="muted">One or more Gemini API keys (rotation). A single <code>GEMINI_API_KEY</code> also works.</td></tr>
             <tr><td><code>PINECONE_API_KEY</code></td><td className="muted">Your Pinecone API key.</td></tr>
-            <tr><td><code>PINECONE_INDEX</code></td><td className="muted">Index name (default <code>dc-sentinel</code>). Must be a 768-dim index for text-embedding-004.</td></tr>
+            <tr><td><code>PINECONE_INDEX</code></td><td className="muted">Index name (default <code>dc-sentinel</code>). Must be a 768-dim index (embeddings use gemini-embedding-001 pinned to 768).</td></tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );

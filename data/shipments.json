@@ -1,0 +1,53 @@
+{
+  "destination": { "name": "Mumbai DC Site, India", "lat": 19.076, "lng": 72.877 },
+  "shipments": [
+    {
+      "id": "SHP-01", "equipment": "UPS Systems (500 kVA x4)", "tag": "UPS-01..04",
+      "origin": "Shanghai, China", "originLat": 31.230, "originLng": 121.474,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 6.9, "curLng": 79.86,
+      "status": "in_transit", "etaDays": 9, "bufferDays": 4,
+      "routeExposure": 0.45, "criticality": "critical"
+    },
+    {
+      "id": "SHP-02", "equipment": "Diesel Generators (2.5 MW x3)", "tag": "DG-01..03",
+      "origin": "Rotterdam, Netherlands", "originLat": 51.948, "originLng": 4.140,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 12.8, "curLng": 43.3,
+      "status": "delayed", "etaDays": 21, "bufferDays": 0,
+      "routeExposure": 0.8, "criticality": "critical"
+    },
+    {
+      "id": "SHP-03", "equipment": "Precision Cooling Units (x12)", "tag": "CRAC-01..12",
+      "origin": "Singapore", "originLat": 1.352, "originLng": 103.820,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 8.1, "curLng": 77.5,
+      "status": "in_transit", "etaDays": 6, "bufferDays": 18,
+      "routeExposure": 0.25, "criticality": "high"
+    },
+    {
+      "id": "SHP-04", "equipment": "MV Switchgear Panels", "tag": "SWGR-01..06",
+      "origin": "Hamburg, Germany", "originLat": 53.551, "originLng": 9.994,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 30.0, "curLng": 32.55,
+      "status": "customs", "etaDays": 15, "bufferDays": 8,
+      "routeExposure": 0.6, "criticality": "high"
+    },
+    {
+      "id": "SHP-05", "equipment": "Cooling Towers (x4)", "tag": "CT-01..04",
+      "origin": "Busan, South Korea", "originLat": 35.180, "originLng": 129.075,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 35.0, "curLng": 128.0,
+      "status": "not_shipped", "etaDays": 28, "bufferDays": 10,
+      "routeExposure": 0.4, "criticality": "medium"
+    },
+    {
+      "id": "SHP-06", "equipment": "Raised Floor & Containment", "tag": "RF-BULK",
+      "origin": "Dubai, UAE", "originLat": 25.276, "originLng": 55.296,
+      "destination": "Mumbai, India", "destLat": 19.076, "destLng": 72.877,
+      "curLat": 21.5, "curLng": 64.0,
+      "status": "in_transit", "etaDays": 4, "bufferDays": 30,
+      "routeExposure": 0.15, "criticality": "low"
+    }
+  ]
+}

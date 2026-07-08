@@ -49,7 +49,7 @@ export default function SchedulePage() {
           </div>
 
           <div className="card">
-            <table>
+            <div className="tablewrap"><table>
               <thead>
                 <tr><th>Activity</th><th>Critical path</th><th>Risk</th><th>Score</th><th>Why</th></tr>
               </thead>
@@ -66,7 +66,7 @@ export default function SchedulePage() {
                   );
                 })}
               </tbody>
-            </table>
+            </table></div>
           </div>
         </div>
       ) : null}

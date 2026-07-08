@@ -33,7 +33,7 @@ Four layers, bottom to top:
 ### Stack
 
 - **Next.js 14** (App Router) on **Vercel**
-- **Gemini 2.5 Flash** for generation + `text-embedding-004` (768-dim) for embeddings, with 1–8 key rotation
+- **Gemini 2.5 Flash** for generation + `gemini-embedding-001` (pinned to 768-dim) for embeddings, with 1–8 key rotation
 - **Pinecone** for vector retrieval
 
 ---
@@ -43,7 +43,7 @@ Four layers, bottom to top:
 ### 1. Create a Pinecone index
 
 - Name: `dc-sentinel` (or set `PINECONE_INDEX`)
-- Dimensions: **768** (matches `text-embedding-004`)
+- Dimensions: **768** (gemini-embedding-001 pinned to 768 via outputDimensionality)
 - Metric: cosine
 
 ### 2. Set environment variables (in Vercel → Project → Settings → Environment Variables)

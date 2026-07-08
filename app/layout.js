@@ -1,25 +1,25 @@
 // app/layout.js
 import "./globals.css";
+import NavBar from "./nav";
 
 export const metadata = {
   title: "DC-Sentinel - EPC Project Intelligence",
   description: "AI project intelligence for data centre EPC delivery"
 };
 
-function Nav() {
+function StatusBar() {
   return (
-    <div>
-      <div className="topbar">
-        <div className="brand">DC<span>-</span>SENTINEL</div>
-        <div className="tag">ET AI Hackathon 2026 &nbsp;|&nbsp; Problem Statement 4</div>
+    <div className="statusbar">
+      <div className="left">
+        <div className="logo-mark">DC</div>
+        <div>
+          <div className="brand">DC<em>-</em>SENTINEL</div>
+          <div className="brand-sub">EPC PROJECT INTELLIGENCE</div>
+        </div>
       </div>
-      <div className="nav">
-        <a href="/">Home</a>
-        <a href="/compliance">Compliance Agent</a>
-        <a href="/rfi">RFI Assistant</a>
-        <a href="/schedule">Schedule Risk</a>
-        <a href="/commissioning">Commissioning QA</a>
-        <a href="/health">Health Check</a>
+      <div className="live-chip">
+        <span className="live-dot" />
+        SYSTEMS ONLINE
       </div>
     </div>
   );
@@ -29,7 +29,8 @@ export default function RootLayout(props) {
   return (
     <html lang="en">
       <body>
-        <Nav />
+        <StatusBar />
+        <NavBar />
         {props.children}
       </body>
     </html>

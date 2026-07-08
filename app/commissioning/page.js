@@ -62,7 +62,7 @@ export default function CommissioningPage() {
           <button className="btn ghost" onClick={prefill}>Prefill demo values</button>
           <button className="btn" onClick={build} disabled={loading}>{loading ? "Validating..." : "Build test record"}</button>
         </div>
-        <table>
+        <div className="tablewrap"><table>
           <thead>
             <tr><th>Test</th><th>System</th><th>Standard</th><th>Measured value</th></tr>
           </thead>
@@ -81,7 +81,7 @@ export default function CommissioningPage() {
               );
             })}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       {record ? (
@@ -92,7 +92,7 @@ export default function CommissioningPage() {
             <div className="stat"><div className="n" style={{ color: "#B33A3A" }}>{record.summary.failed}</div><div className="l">Fail</div></div>
             <div className="stat"><div className="n" style={{ color: "#8A8A8A" }}>{record.summary.pending}</div><div className="l">Pending</div></div>
           </div>
-          <table>
+          <div className="tablewrap"><table>
             <thead>
               <tr><th>Test</th><th>Measured</th><th>Requirement</th><th>Status</th></tr>
             </thead>
@@ -109,7 +109,7 @@ export default function CommissioningPage() {
                 );
               })}
             </tbody>
-          </table>
+          </table></div>
         </div>
       ) : null}
     </div>

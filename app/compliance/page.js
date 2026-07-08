@@ -94,7 +94,7 @@ export default function CompliancePage() {
           </div>
           <p className="muted">Equipment tag: <b>{report.equipmentTag || "n/a"}</b> &nbsp;|&nbsp; Type: <b>{report.equipmentType || "n/a"}</b></p>
 
-          <table>
+          <div className="tablewrap"><table>
             <thead>
               <tr><th>Parameter</th><th>Submitted</th><th>Required</th><th>Status</th><th>Explanation &amp; citation</th></tr>
             </thead>
@@ -118,7 +118,7 @@ export default function CompliancePage() {
                 );
               })}
             </tbody>
-          </table>
+          </table></div>
         </div>
       ) : null}
     </div>
