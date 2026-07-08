@@ -9,6 +9,7 @@ var LINKS = [
   { href: "/schedule", label: "Schedule Risk" },
   { href: "/supplychain", label: "Supply Chain" },
   { href: "/commissioning", label: "Commissioning" },
+  { href: "/admin", label: "Admin \u00B7 Data" },
   { href: "/health", label: "Health" }
 ];
 
